@@ -7,3 +7,12 @@
 
 4. Iterate through your strings list and print each string.
 """
+
+num_list = [1, 3, 4.5, 7.9]
+
+string_list = ["Lambda is not the same as it once was", "said", "all current students."]
+
+print(num_list[3], string_list[0])
+
+for lists in num_list, string_list:
+    print(lists)
