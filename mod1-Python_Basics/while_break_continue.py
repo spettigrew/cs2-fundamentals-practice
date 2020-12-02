@@ -7,3 +7,20 @@ numbers_list = [
 ]
 
 # YOUR CODE HERE
+
+for x in numbers_list:
+  if x == 950:
+    break
+  elif x % 2 == 0:
+    continue
+  print(x)
+  
+# count = 1
+# while count < 951:
+#     print(count)
+#     count += 2
+
+# for numbers_list in range(951, 2):
+#     if numbers_list % 2 == 0:
+#         continue
+# print(numbers_list)
