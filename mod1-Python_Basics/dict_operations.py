@@ -5,11 +5,13 @@ Remove "Bill" from the phonebook.
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
-    "Barry": 6573214789
+    "Barry": 6573214789,
+    "Herb": 7653420789
 }
 
 # YOUR CODE HERE
-
+# del phonebook["Bill"]
+print(phonebook.pop("Bill"))
 
 # Should print Herb is in the phonebook.
 if "Herb" in phonebook:
