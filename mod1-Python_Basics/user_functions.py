@@ -3,8 +3,7 @@ Modify this function to make it return the sum of the arguments a and b.
 """
 def sum(a, b):
     # DELETE THE PASS STATEMENT AND WRITE YOUR CODE HERE
-    pass
-
+    return a + b
 # This should print 7
 print(sum(2, 5))
 
@@ -15,7 +14,7 @@ the double of the sum of a and b.
 """
 def double_the_sum(a, b):
     # DELETE THE PASS STATEMENT AND WRITE YOUR CODE HERE
-    pass
+    return a * b
 
 # This should print 14
 print(double_the_sum(2, 5))
