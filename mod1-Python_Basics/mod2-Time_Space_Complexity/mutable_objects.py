@@ -3,15 +3,17 @@ Example One
 """
 my_list1 = [1, 2, 3, 4, 5, 6]
 my_list2 = my_list1
-# How would you verify that my_list1 and my_list2 have the same identity?   -Check memory placement number by using id
-print(my_list1)
+# How would you verify that my_list1 and my_list2 have the same identity?   -Check memory placement number by using id or 'is'
+print(my_list1 is my_list2)
 
 my_list1.append(7)
 # Check if my_list1 and my_list2 still have the same identity.
 # If they do, why is that?  - yes. because lists are mutable
 print(my_list1)
+print(my_list2)
+print(my_list1 is my_list2)
 
-
+# mutable is passed by reference
 
 """
 Example Two
@@ -19,22 +21,33 @@ Example Two
 my_text1 = "Lambda School"
 my_text2 = my_text1
 # How would you verify that my_text1 and my_text2 have the same identity?   -check the id of print(id(my_text1))
+print(my_text1 is my_text2)
 print(my_text1)
+print(my_text2)
 
 my_text1 += " is awesome!"
-# Check if my_text1 and my_text2 still have the same identity?
+# Check if my_text1 and my_text2 still have the same identity? - no
+print(my_text1 is my_text2)
 print(my_text1)
+print(my_text2)
 print(id(my_text1))
-# If they do not, why is that?   -yes. because lists are mutable
+# check value: ==
+print(my_text1 == my_text2)
+# to check value too or mememory: is
+print(my_text1 is my_text2)
 
-# Now check if my_text1 and my_text2 have the same value?
+# If they do not, why is that?   -no. because strings are immutable
+
+# Now check if my_text1 and my_text2 have the same value? 
+# -same value with ==, but not is
 print(id(my_text1))
-# Do they? Explain why or why not. yes. because 2 was reassignd to 1
+# Do they? Explain why or why not. No. because 2 was reassignd created and 1 still exists
 
 
 
 """
 Example Three   - lists [], tuples ()
+tuples are immutable! lists: mutable
 """
 # Initialize a list and assign to produce
 produce = ["Apple", "Banana", "Carrot"]
