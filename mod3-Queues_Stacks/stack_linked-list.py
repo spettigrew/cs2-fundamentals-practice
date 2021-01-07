@@ -62,3 +62,15 @@ class Stack:
             return self[-1]
         else:
             return None
+
+    # from demo in lecture of stacks and queues
+    # def peek(self):
+    #     """Return the last item without removing it"""
+    #     if not self.items:
+    #         return None
+    #     return self.items[-1]
+
+     # my code for peek method - Jess B
+    # def peek(self):
+    #     if self.top is not None:
+    #         return self.top
