@@ -27,6 +27,6 @@ class Stack:
             return self.data.pop()
         return "The stack is empty"
     
-    def peek(self):
-        return self.items[0]
+    def peek(self, item):
+        return self.data[-1]
         
