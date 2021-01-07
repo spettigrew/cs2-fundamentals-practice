@@ -45,9 +45,6 @@ class Queue:
         self.front = None
         self.rear = None
 
-    def is_empty(self):
-        return self.front == None
-
     def enqueue(self, item):
         new_node = LinkedListNode(item)
         # check if queue is empty
@@ -72,6 +69,12 @@ class Queue:
         if self.front is None:
             # make sure rear is also None
             self.rear = None
+
+        # check if the queue is now empty
+        if self.is_empty():
+            # make sure rear is also None
+            self.rear = None
+
         return old_front.data
 
     
